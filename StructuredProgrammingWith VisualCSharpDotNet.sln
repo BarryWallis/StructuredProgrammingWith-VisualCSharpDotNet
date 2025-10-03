@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.14.36518.9 d17.14
+VisualStudioVersion = 17.14.36518.9
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "My PictureBox Application,", "My PictureBox Application,\My PictureBox Application,.csproj", "{4A40F399-F44F-43DB-81F8-2D23423244D5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "My Calculator", "My Calculator\My Calculator.csproj", "{8A3DD4A0-B4A1-42B7-85EB-79878A52DA50}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{4A40F399-F44F-43DB-81F8-2D23423244D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4A40F399-F44F-43DB-81F8-2D23423244D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4A40F399-F44F-43DB-81F8-2D23423244D5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8A3DD4A0-B4A1-42B7-85EB-79878A52DA50}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8A3DD4A0-B4A1-42B7-85EB-79878A52DA50}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8A3DD4A0-B4A1-42B7-85EB-79878A52DA50}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8A3DD4A0-B4A1-42B7-85EB-79878A52DA50}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

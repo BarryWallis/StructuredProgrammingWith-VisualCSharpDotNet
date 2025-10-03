@@ -1,4 +1,4 @@
-﻿namespace My_PictureBox_Application_;
+﻿namespace My_Calculator;
 
 internal static class Program
 {
