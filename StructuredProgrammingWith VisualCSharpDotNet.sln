@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "My Calculator", "My Calcula
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Student Full Name", "Student Full Name\Student Full Name.csproj", "{655B4887-C784-4395-9B4C-06F24E2346B6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exception Handling Example", "Exception Handling Example\Exception Handling Example.csproj", "{FA351A3C-82B7-4D22-9062-0042BE53CB11}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{655B4887-C784-4395-9B4C-06F24E2346B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{655B4887-C784-4395-9B4C-06F24E2346B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{655B4887-C784-4395-9B4C-06F24E2346B6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FA351A3C-82B7-4D22-9062-0042BE53CB11}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA351A3C-82B7-4D22-9062-0042BE53CB11}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA351A3C-82B7-4D22-9062-0042BE53CB11}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA351A3C-82B7-4D22-9062-0042BE53CB11}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
