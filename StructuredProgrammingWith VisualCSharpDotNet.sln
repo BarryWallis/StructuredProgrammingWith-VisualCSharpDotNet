@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Student Full Name", "Studen
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exception Handling Example", "Exception Handling Example\Exception Handling Example.csproj", "{FA351A3C-82B7-4D22-9062-0042BE53CB11}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Testing the Math Class Methods", "Testing the Math Class Methods\Testing the Math Class Methods.csproj", "{C8D74E39-9018-442F-86FF-19414BCDAEFD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{FA351A3C-82B7-4D22-9062-0042BE53CB11}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FA351A3C-82B7-4D22-9062-0042BE53CB11}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FA351A3C-82B7-4D22-9062-0042BE53CB11}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C8D74E39-9018-442F-86FF-19414BCDAEFD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C8D74E39-9018-442F-86FF-19414BCDAEFD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C8D74E39-9018-442F-86FF-19414BCDAEFD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C8D74E39-9018-442F-86FF-19414BCDAEFD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
