@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Testing Scope", "Testing Sc
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Retirement Eligibility Application", "Retirement Eligibility Application\Retirement Eligibility Application.csproj", "{D934B6E0-9EA1-4AB5-B437-066DA9791FE7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Guess the Number Game", "Guess the Number Game\Guess the Number Game.csproj", "{AEAAD93E-F833-4B60-8AC2-54BB5736CE05}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +53,10 @@ Global
 		{D934B6E0-9EA1-4AB5-B437-066DA9791FE7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D934B6E0-9EA1-4AB5-B437-066DA9791FE7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D934B6E0-9EA1-4AB5-B437-066DA9791FE7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AEAAD93E-F833-4B60-8AC2-54BB5736CE05}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AEAAD93E-F833-4B60-8AC2-54BB5736CE05}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AEAAD93E-F833-4B60-8AC2-54BB5736CE05}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AEAAD93E-F833-4B60-8AC2-54BB5736CE05}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
