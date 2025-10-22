@@ -12,6 +12,7 @@
     <ForceDesignerDpiUnaware>true</ForceDesignerDpiUnaware>
     <!-- Configure DPI mode via project property to avoid manifest-based DPI settings (see WFO0003) -->
     <ApplicationHighDpiMode>DpiUnaware</ApplicationHighDpiMode>
+    <NeutralLanguage>en-US</NeutralLanguage>
   </PropertyGroup>
 
   <ItemGroup>

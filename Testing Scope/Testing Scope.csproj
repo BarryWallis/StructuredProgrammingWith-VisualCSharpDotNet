@@ -3,12 +3,12 @@
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
     <TargetFramework>net10.0-windows</TargetFramework>
-    <RootNamespace>Testing_the_Math_Class_Methods</RootNamespace>
+    <RootNamespace>Testing_Scope</RootNamespace>
     <Nullable>enable</Nullable>
     <UseWindowsForms>true</UseWindowsForms>
     <ImplicitUsings>enable</ImplicitUsings>
-    <ForceDesignerDpiUnaware>true</ForceDesignerDpiUnaware>
     <LangVersion>preview</LangVersion>
+    <ForceDesignerDpiUnaware>true</ForceDesignerDpiUnaware>
     <NeutralLanguage>en-US</NeutralLanguage>
   </PropertyGroup>
 

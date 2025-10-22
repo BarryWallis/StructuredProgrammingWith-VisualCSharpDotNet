@@ -13,6 +13,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exception Handling Example"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Testing the Math Class Methods", "Testing the Math Class Methods\Testing the Math Class Methods.csproj", "{C8D74E39-9018-442F-86FF-19414BCDAEFD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Testing Scope", "Testing Scope\Testing Scope.csproj", "{8AC44302-5CEE-49D6-931D-E11FF2DA0857}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Retirement Eligibility Application", "Retirement Eligibility Application\Retirement Eligibility Application.csproj", "{D934B6E0-9EA1-4AB5-B437-066DA9791FE7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +43,14 @@ Global
 		{C8D74E39-9018-442F-86FF-19414BCDAEFD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C8D74E39-9018-442F-86FF-19414BCDAEFD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C8D74E39-9018-442F-86FF-19414BCDAEFD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8AC44302-5CEE-49D6-931D-E11FF2DA0857}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8AC44302-5CEE-49D6-931D-E11FF2DA0857}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8AC44302-5CEE-49D6-931D-E11FF2DA0857}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8AC44302-5CEE-49D6-931D-E11FF2DA0857}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D934B6E0-9EA1-4AB5-B437-066DA9791FE7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D934B6E0-9EA1-4AB5-B437-066DA9791FE7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D934B6E0-9EA1-4AB5-B437-066DA9791FE7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D934B6E0-9EA1-4AB5-B437-066DA9791FE7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
