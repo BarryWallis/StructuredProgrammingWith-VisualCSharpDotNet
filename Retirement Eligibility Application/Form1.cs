@@ -36,16 +36,36 @@ public partial class Form1 : Form
     /// </example>
     private void BtnCalculate_Click(object sender, EventArgs e)
     {
-        int yearsOnJob = int.Parse(txtYearsWorked.Text);
-        DateTime birthdate = DateTime.Parse(txtBirthday.Text);
+        try
+        {
+            int yearsOnJob = int.Parse(txtYearsWorked.Text);
+            DateTime birthdate = DateTime.Parse(txtBirthday.Text);
 
-        _ = yearsOnJob >= 5
-            ? birthdate <= DateTime.Today.AddYears(-65)
-                ? MessageBox.Show("You are eligible for retirement & Social Security")
-                : MessageBox.Show("You are eligible for retirement, but not Social Security")
-            : birthdate <= DateTime.Today.AddYears(-65)
-                ? MessageBox.Show("You are not vested in the retirement system, but you are eligible for Social Security")
-                : MessageBox.Show("You are not vested in the retirement system nor qualified for Social Security");
+            _ = yearsOnJob >= 5
+                ? birthdate <= DateTime.Today.AddYears(-65)
+                    ? MessageBox.Show("You are eligible for retirement & Social Security")
+                    : MessageBox.Show("You are eligible for retirement, but not Social Security")
+                : birthdate <= DateTime.Today.AddYears(-65)
+                    ? MessageBox.Show("You are not vested in the retirement system, but you are eligible for Social Security")
+                    : MessageBox.Show("You are not vested in the retirement system nor qualified for Social Security");
+        }
+        catch (ArgumentNullException)
+        {
+            _ = MessageBox.Show("Please enter values for Years Worked and Birthday.");
+        }
+        catch (FormatException)
+        {
+            _ = MessageBox.Show("Enter a whole number for Years Worked and a valid date for Birthday.");
+        }
+        catch (OverflowException)
+        {
+            _ = MessageBox.Show("Years Worked is outside the valid range.");
+        }
+        catch (Exception ex)
+        {
+            // Fallback for any unexpected errors to avoid crashing the application.
+            _ = MessageBox.Show($"An unexpected error occurred: {ex.Message}");
+        }
     }
 
     /// <summary>
