@@ -29,7 +29,6 @@ partial class MainForm
     private void InitializeComponent()
     {
         labelTitle = new Label();
-        labelAnswer = new Label();
         Button7 = new Button();
         Button8 = new Button();
         Button9 = new Button();
@@ -48,6 +47,7 @@ partial class MainForm
         ButtonClear = new Button();
         ButtonEquals = new Button();
         ButtonSqrt = new Button();
+        txtResult = new TextBox();
         SuspendLayout();
         // 
         // labelTitle
@@ -60,18 +60,6 @@ partial class MainForm
         labelTitle.Text = "My Calculator";
         labelTitle.TextAlign = ContentAlignment.TopCenter;
         // 
-        // labelAnswer
-        // 
-        labelAnswer.BackColor = Color.White;
-        labelAnswer.BorderStyle = BorderStyle.FixedSingle;
-        labelAnswer.Font = new Font("Times New Roman", 20F, FontStyle.Bold, GraphicsUnit.Point, 0);
-        labelAnswer.Location = new Point(12, 51);
-        labelAnswer.Name = "labelAnswer";
-        labelAnswer.Size = new Size(399, 33);
-        labelAnswer.TabIndex = 1;
-        labelAnswer.Text = "0";
-        labelAnswer.TextAlign = ContentAlignment.MiddleRight;
-        // 
         // Button7
         // 
         Button7.BackColor = Color.LightGray;
@@ -79,7 +67,7 @@ partial class MainForm
         Button7.Location = new Point(12, 87);
         Button7.Name = "Button7";
         Button7.Size = new Size(75, 65);
-        Button7.TabIndex = 2;
+        Button7.TabIndex = 17;
         Button7.Text = "7";
         Button7.UseVisualStyleBackColor = false;
         Button7.Click += Button7_Click;
@@ -91,7 +79,7 @@ partial class MainForm
         Button8.Location = new Point(93, 87);
         Button8.Name = "Button8";
         Button8.Size = new Size(75, 65);
-        Button8.TabIndex = 3;
+        Button8.TabIndex = 18;
         Button8.Text = "8";
         Button8.UseVisualStyleBackColor = false;
         Button8.Click += Button8_Click;
@@ -103,7 +91,7 @@ partial class MainForm
         Button9.Location = new Point(174, 87);
         Button9.Name = "Button9";
         Button9.Size = new Size(75, 65);
-        Button9.TabIndex = 4;
+        Button9.TabIndex = 19;
         Button9.Text = "9";
         Button9.UseVisualStyleBackColor = false;
         Button9.Click += Button9_Click;
@@ -115,7 +103,7 @@ partial class MainForm
         Button6.Location = new Point(174, 158);
         Button6.Name = "Button6";
         Button6.Size = new Size(75, 65);
-        Button6.TabIndex = 7;
+        Button6.TabIndex = 16;
         Button6.Text = "6";
         Button6.UseVisualStyleBackColor = false;
         Button6.Click += Button6_Click;
@@ -127,7 +115,7 @@ partial class MainForm
         Button5.Location = new Point(93, 158);
         Button5.Name = "Button5";
         Button5.Size = new Size(75, 65);
-        Button5.TabIndex = 6;
+        Button5.TabIndex = 15;
         Button5.Text = "5";
         Button5.UseVisualStyleBackColor = false;
         Button5.Click += Button5_Click;
@@ -139,7 +127,7 @@ partial class MainForm
         Button4.Location = new Point(12, 158);
         Button4.Name = "Button4";
         Button4.Size = new Size(75, 65);
-        Button4.TabIndex = 5;
+        Button4.TabIndex = 14;
         Button4.Text = "4";
         Button4.UseVisualStyleBackColor = false;
         Button4.Click += Button4_Click;
@@ -151,7 +139,7 @@ partial class MainForm
         Button3.Location = new Point(174, 229);
         Button3.Name = "Button3";
         Button3.Size = new Size(75, 65);
-        Button3.TabIndex = 10;
+        Button3.TabIndex = 13;
         Button3.Text = "3";
         Button3.UseVisualStyleBackColor = false;
         Button3.Click += Button3_Click;
@@ -163,7 +151,7 @@ partial class MainForm
         Button2.Location = new Point(93, 229);
         Button2.Name = "Button2";
         Button2.Size = new Size(75, 65);
-        Button2.TabIndex = 9;
+        Button2.TabIndex = 12;
         Button2.Text = "2";
         Button2.UseVisualStyleBackColor = false;
         Button2.Click += Button2_Click;
@@ -175,7 +163,7 @@ partial class MainForm
         Button1.Location = new Point(12, 229);
         Button1.Name = "Button1";
         Button1.Size = new Size(75, 65);
-        Button1.TabIndex = 8;
+        Button1.TabIndex = 11;
         Button1.Text = "1";
         Button1.UseVisualStyleBackColor = false;
         Button1.Click += Button1_Click;
@@ -187,7 +175,7 @@ partial class MainForm
         Button0.Location = new Point(12, 300);
         Button0.Name = "Button0";
         Button0.Size = new Size(75, 65);
-        Button0.TabIndex = 11;
+        Button0.TabIndex = 10;
         Button0.Text = "0";
         Button0.UseVisualStyleBackColor = false;
         Button0.Click += Button0_Click;
@@ -199,7 +187,7 @@ partial class MainForm
         ButtonDot.Location = new Point(93, 300);
         ButtonDot.Name = "ButtonDot";
         ButtonDot.Size = new Size(75, 65);
-        ButtonDot.TabIndex = 12;
+        ButtonDot.TabIndex = 9;
         ButtonDot.Text = ".";
         ButtonDot.UseVisualStyleBackColor = false;
         ButtonDot.Click += ButtonDot_Click;
@@ -211,7 +199,7 @@ partial class MainForm
         ButtonMultiply.Location = new Point(174, 300);
         ButtonMultiply.Name = "ButtonMultiply";
         ButtonMultiply.Size = new Size(75, 65);
-        ButtonMultiply.TabIndex = 13;
+        ButtonMultiply.TabIndex = 5;
         ButtonMultiply.Text = "*";
         ButtonMultiply.UseVisualStyleBackColor = false;
         ButtonMultiply.Click += ButtonMultiply_Click;
@@ -223,7 +211,7 @@ partial class MainForm
         ButtonDivide.Location = new Point(255, 87);
         ButtonDivide.Name = "ButtonDivide";
         ButtonDivide.Size = new Size(75, 65);
-        ButtonDivide.TabIndex = 14;
+        ButtonDivide.TabIndex = 2;
         ButtonDivide.Text = "/";
         ButtonDivide.UseVisualStyleBackColor = false;
         ButtonDivide.Click += ButtonDivide_Click;
@@ -235,7 +223,7 @@ partial class MainForm
         ButtonMinus.Location = new Point(255, 158);
         ButtonMinus.Name = "ButtonMinus";
         ButtonMinus.Size = new Size(75, 65);
-        ButtonMinus.TabIndex = 15;
+        ButtonMinus.TabIndex = 3;
         ButtonMinus.Text = "-";
         ButtonMinus.UseVisualStyleBackColor = false;
         ButtonMinus.Click += ButtonMinus_Click;
@@ -247,7 +235,7 @@ partial class MainForm
         ButtonPlus.Location = new Point(255, 229);
         ButtonPlus.Name = "ButtonPlus";
         ButtonPlus.Size = new Size(75, 65);
-        ButtonPlus.TabIndex = 16;
+        ButtonPlus.TabIndex = 4;
         ButtonPlus.Text = "+";
         ButtonPlus.UseVisualStyleBackColor = false;
         ButtonPlus.Click += ButtonPlus_Click;
@@ -259,7 +247,7 @@ partial class MainForm
         ButtonClear.Location = new Point(336, 87);
         ButtonClear.Name = "ButtonClear";
         ButtonClear.Size = new Size(75, 65);
-        ButtonClear.TabIndex = 17;
+        ButtonClear.TabIndex = 6;
         ButtonClear.Text = "C";
         ButtonClear.UseVisualStyleBackColor = false;
         ButtonClear.Click += ButtonClear_Click;
@@ -271,7 +259,7 @@ partial class MainForm
         ButtonEquals.Location = new Point(336, 158);
         ButtonEquals.Name = "ButtonEquals";
         ButtonEquals.Size = new Size(75, 136);
-        ButtonEquals.TabIndex = 18;
+        ButtonEquals.TabIndex = 7;
         ButtonEquals.Text = "=";
         ButtonEquals.UseVisualStyleBackColor = false;
         ButtonEquals.Click += ButtonEquals_Click;
@@ -283,10 +271,20 @@ partial class MainForm
         ButtonSqrt.Location = new Point(255, 300);
         ButtonSqrt.Name = "ButtonSqrt";
         ButtonSqrt.Size = new Size(156, 65);
-        ButtonSqrt.TabIndex = 19;
+        ButtonSqrt.TabIndex = 8;
         ButtonSqrt.Text = "Sqrt";
         ButtonSqrt.UseVisualStyleBackColor = false;
         ButtonSqrt.Click += ButtonSqrt_Click;
+        // 
+        // txtResult
+        // 
+        txtResult.Font = new Font("Times New Roman", 20F, FontStyle.Bold, GraphicsUnit.Point, 0);
+        txtResult.Location = new Point(12, 43);
+        txtResult.Name = "txtResult";
+        txtResult.Size = new Size(395, 38);
+        txtResult.TabIndex = 1;
+        txtResult.Text = "0";
+        txtResult.TextAlign = HorizontalAlignment.Right;
         // 
         // MainForm
         // 
@@ -294,6 +292,7 @@ partial class MainForm
         AutoScaleMode = AutoScaleMode.Font;
         BackColor = Color.PeachPuff;
         ClientSize = new Size(419, 374);
+        Controls.Add(txtResult);
         Controls.Add(ButtonSqrt);
         Controls.Add(ButtonEquals);
         Controls.Add(ButtonClear);
@@ -312,19 +311,18 @@ partial class MainForm
         Controls.Add(Button9);
         Controls.Add(Button8);
         Controls.Add(Button7);
-        Controls.Add(labelAnswer);
         Controls.Add(labelTitle);
         Margin = new Padding(2);
         Name = "MainForm";
         StartPosition = FormStartPosition.CenterScreen;
         Text = "My Calculator";
         ResumeLayout(false);
+        PerformLayout();
     }
 
     #endregion
 
     private Label labelTitle;
-    private Label labelAnswer;
     private Button Button7;
     private Button Button8;
     private Button Button9;
@@ -343,4 +341,5 @@ partial class MainForm
     private Button ButtonClear;
     private Button ButtonEquals;
     private Button ButtonSqrt;
+    private TextBox txtResult;
 }
