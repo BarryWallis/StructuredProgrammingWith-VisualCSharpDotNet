@@ -7,9 +7,41 @@
 /// </summary>
 public partial class MainForm : Form
 {
+    /// <summary>
+    /// Represents the calculator operation currently selected.
+    /// Using an enum improves readability and maintainability over magic integers.
+    /// </summary>
+    private enum MathOperation
+    {
+        /// <summary>
+        /// No operation selected.
+        /// </summary>
+        None = 0,
+
+        /// <summary>
+        /// Add two numbers.
+        /// </summary>
+        Addition = 1,
+
+        /// <summary>
+        /// Subtract the second number from the first.
+        /// </summary>
+        Subtraction = 2,
+
+        /// <summary>
+        /// Multiply two numbers.
+        /// </summary>
+        Multiplication = 3,
+
+        /// <summary>
+        /// Divide the first number by the second.
+        /// </summary>
+        Division = 4
+    }
+
     private double _number1 = 0.0;
     private double _number2 = 0.0;
-    private int _math = 0;
+    private MathOperation _math = MathOperation.None;
     private bool _results = false;
 
     /// <summary>
@@ -18,7 +50,7 @@ public partial class MainForm : Form
     public MainForm() => InitializeComponent();
 
     /// <summary>
-    /// Handles the click event for the digit '0' button. Implement to append the digit to the current input.
+    /// Appends the digit '0' to the current input.
     /// </summary>
     /// <param name="sender">The control that raised the event.</param>
     /// <param name="e">Event arguments.</param>
@@ -37,7 +69,7 @@ public partial class MainForm : Form
     }
 
     /// <summary>
-    /// Handles the click event for the digit '1' button. Implement to append the digit to the current input.
+    /// Appends the digit '1' to the current input.
     /// </summary>
     /// <param name="sender">The control that raised the event.</param>
     /// <param name="e">Event arguments.</param>
@@ -60,7 +92,7 @@ public partial class MainForm : Form
     }
 
     /// <summary>
-    /// Handles the click event for the digit '2' button. Implement to append the digit to the current input.
+    /// Appends the digit '2' to the current input.
     /// </summary>
     /// <param name="sender">The control that raised the event.</param>
     /// <param name="e">Event arguments.</param>
@@ -83,7 +115,7 @@ public partial class MainForm : Form
     }
 
     /// <summary>
-    /// Handles the click event for the digit '3' button. Implement to append the digit to the current input.
+    /// Appends the digit '3' to the current input.
     /// </summary>
     /// <param name="sender">The control that raised the event.</param>
     /// <param name="e">Event arguments.</param>
@@ -106,7 +138,7 @@ public partial class MainForm : Form
     }
 
     /// <summary>
-    /// Handles the click event for the digit '4' button. Implement to append the digit to the current input.
+    /// Appends the digit '4' to the current input.
     /// </summary>
     /// <param name="sender">The control that raised the event.</param>
     /// <param name="e">Event arguments.</param>
@@ -129,7 +161,7 @@ public partial class MainForm : Form
     }
 
     /// <summary>
-    /// Handles the click event for the digit '5' button. Implement to append the digit to the current input.
+    /// Appends the digit '5' to the current input.
     /// </summary>
     /// <param name="sender">The control that raised the event.</param>
     /// <param name="e">Event arguments.</param>
@@ -152,7 +184,7 @@ public partial class MainForm : Form
     }
 
     /// <summary>
-    /// Handles the click event for the digit '6' button. Implement to append the digit to the current input.
+    /// Appends the digit '6' to the current input.
     /// </summary>
     /// <param name="sender">The control that raised the event.</param>
     /// <param name="e">Event arguments.</param>
@@ -175,7 +207,7 @@ public partial class MainForm : Form
     }
 
     /// <summary>
-    /// Handles the click event for the digit '7' button. Implement to append the digit to the current input.
+    /// Appends the digit '7' to the current input.
     /// </summary>
     /// <param name="sender">The control that raised the event.</param>
     /// <param name="e">Event arguments.</param>
@@ -198,7 +230,7 @@ public partial class MainForm : Form
     }
 
     /// <summary>
-    /// Handles the click event for the digit '8' button. Implement to append the digit to the current input.
+    /// Appends the digit '8' to the current input.
     /// </summary>
     /// <param name="sender">The control that raised the event.</param>
     /// <param name="e">Event arguments.</param>
@@ -221,7 +253,7 @@ public partial class MainForm : Form
     }
 
     /// <summary>
-    /// Handles the click event for the digit '9' button. Implement to append the digit to the current input.
+    /// Appends the digit '9' to the current input.
     /// </summary>
     /// <param name="sender">The control that raised the event.</param>
     /// <param name="e">Event arguments.</param>
@@ -244,18 +276,18 @@ public partial class MainForm : Form
     }
 
     /// <summary>
-    /// Handles the click event for the clear button. Implement to reset the current input and any stored state.
+    /// Resets the current input and any stored state.
     /// </summary>
     /// <param name="sender">The control that raised the event.</param>
     /// <param name="e">Event arguments.</param>
     private void ButtonClear_Click(object sender, EventArgs e)
     {
         txtResult.Text = "0";
-        _math = 0;
+        _math = MathOperation.None;
     }
 
     /// <summary>
-    /// Handles the click event for the divide operator button. Implement to queue a division operation (with divide-by-zero handling).
+    /// Queues a division operation.
     /// </summary>
     /// <param name="sender">The control that raised the event.</param>
     /// <param name="e">Event arguments.</param>
@@ -268,12 +300,12 @@ public partial class MainForm : Form
         }
 
         txtResult.Clear();
-        _math = 4; // Assuming 4 represents division
+        _math = MathOperation.Division; // Division
 
     }
 
     /// <summary>
-    /// Handles the click event for the decimal separator button. Implement to append a decimal point if one is not already present.
+    /// Appends a decimal point to the current input.
     /// </summary>
     /// <param name="sender">The control that raised the event.</param>
     /// <param name="e">Event arguments.</param>
@@ -296,7 +328,7 @@ public partial class MainForm : Form
     }
 
     /// <summary>
-    /// Handles the click event for the equals button. Implement to evaluate the current expression and display the result.
+    /// Evaluates the current expression and displays the result.
     /// </summary>
     /// <param name="sender">The control that raised the event.</param>
     /// <param name="e">Event arguments.</param>
@@ -308,23 +340,23 @@ public partial class MainForm : Form
             {
                 switch (_math)
                 {
-                    case 1: // Addition
+                    case MathOperation.Addition: // Addition
                         txtResult.Text = (_number1 + _number2).ToString();
                         break;
-                    case 2: // Subtraction
+                    case MathOperation.Subtraction: // Subtraction
                         txtResult.Text = (_number1 - _number2).ToString();
                         break;
-                    case 3: // Multiplication
+                    case MathOperation.Multiplication: // Multiplication
                         txtResult.Text = (_number1 * _number2).ToString();
                         break;
-                    case 4: // Division
+                    case MathOperation.Division: // Division
                         txtResult.Text = (_number1 / _number2).ToString();
                         break;
                     default:
                         break;
                 }
 
-                _math = 0;
+                _math = MathOperation.None;
                 _results = true;
             }
             else
@@ -332,20 +364,20 @@ public partial class MainForm : Form
                 _ = MessageBox.Show("Invalid input. Please click Clear and enter a valid number.", "Input Error",
                                     MessageBoxButtons.OK, MessageBoxIcon.Error);
                 txtResult.Clear();
-                _math = 1; // Assuming 1 represents addition
+                _math = MathOperation.Addition; // Default to addition
             }
         }
         catch (Exception ex)
         {
             _ = MessageBox.Show($"Unexpected error: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             txtResult.Text = "0";
-            _math = 0;
+            _math = MathOperation.None;
             _results = true;
         }
     }
 
     /// <summary>
-    /// Handles the click event for the minus operator button. Implement to queue a subtraction operation.
+    /// Queues a subtraction operation.
     /// </summary>
     /// <param name="sender">The control that raised the event.</param>
     /// <param name="e">Event arguments.</param>
@@ -358,11 +390,11 @@ public partial class MainForm : Form
         }
 
         txtResult.Clear();
-        _math = 2; // Assuming 2 represents subtraction
+        _math = MathOperation.Subtraction; // Subtraction
     }
 
     /// <summary>
-    /// Handles the click event for the multiply operator button. Implement to queue a multiplication operation.
+    /// Queues a multiplication operation.
     /// </summary>
     /// <param name="sender">The control that raised the event.</param>
     /// <param name="e">Event arguments.</param>
@@ -375,12 +407,12 @@ public partial class MainForm : Form
         }
 
         txtResult.Clear();
-        _math = 3; // Assuming 3 represents multiplication
+        _math = MathOperation.Multiplication; // Multiplication
 
     }
 
     /// <summary>
-    /// Handles the click event for the plus operator button. Implement to queue an addition operation.
+    /// Queues an addition operation.
     /// </summary>
     /// <param name="sender">The control that raised the event.</param>
     /// <param name="e">Event arguments.</param>
@@ -393,11 +425,11 @@ public partial class MainForm : Form
         }
 
         txtResult.Clear();
-        _math = 1; // Assuming 1 represents addition
+        _math = MathOperation.Addition; // Addition
     }
 
     /// <summary>
-    /// Handles the click event for the square root button. Implement to compute the square root of the current value (with validation for negatives).
+    /// Computes the square root of the current value.
     /// </summary>
     /// <param name="sender">The control that raised the event.</param>
     /// <param name="e">Event arguments.</param>
