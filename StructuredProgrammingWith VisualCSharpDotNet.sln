@@ -21,6 +21,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Guess the Number Game", "Gu
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ISCT Survey", "ISCT Survey\ISCT Survey.csproj", "{5369A254-0E95-41B4-B8BB-2F47DC5E9A18}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "The Communicator", "The Communicator\The Communicator.csproj", "{01653FE7-9C95-4CAB-BD67-E4B34473C24B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -63,6 +65,10 @@ Global
 		{5369A254-0E95-41B4-B8BB-2F47DC5E9A18}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5369A254-0E95-41B4-B8BB-2F47DC5E9A18}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5369A254-0E95-41B4-B8BB-2F47DC5E9A18}.Release|Any CPU.Build.0 = Release|Any CPU
+		{01653FE7-9C95-4CAB-BD67-E4B34473C24B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{01653FE7-9C95-4CAB-BD67-E4B34473C24B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{01653FE7-9C95-4CAB-BD67-E4B34473C24B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{01653FE7-9C95-4CAB-BD67-E4B34473C24B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
