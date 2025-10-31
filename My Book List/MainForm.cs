@@ -80,17 +80,6 @@ public partial class MainForm : Form
     private void BtnCountItems_Click(object sender, EventArgs e) => txtListItem.Text = $"Total number of books: {lstBooks.Items.Count}";
 
     /// <summary>
-    /// Placeholder for handling text changes in <see cref="txtListItem"/>.
-    /// Useful for future validation or enabling/disabling buttons.
-    /// </summary>
-    /// <param name="sender">The source of the event (text box).</param>
-    /// <param name="e">Standard event data.</param>
-    private void TxtListItem_TextChanged(object sender, EventArgs e)
-    {
-
-    }
-
-    /// <summary>
     /// Closes the application window.
     /// </summary>
     /// <param name="sender">The source of the event (Exit button).</param>

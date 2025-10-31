@@ -91,7 +91,6 @@ partial class MainForm
         txtListItem.Name = "txtListItem";
         txtListItem.Size = new Size(395, 26);
         txtListItem.TabIndex = 1;
-        txtListItem.TextChanged += TxtListItem_TextChanged;
         // 
         // btnSubmit
         // 
