@@ -27,6 +27,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "My Book List", "My Book Lis
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "My Savings Account", "My Savings Account\My Savings Account.csproj", "{FB4A74CC-4BA3-44F4-B7BA-CA779E6DE3C7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Testing Inc_Dec Operators", "Testing Inc_Dec Operators\Testing Inc_Dec Operators.csproj", "{B398AD6F-E4D4-44D4-AC9F-C895253EEAFF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -81,6 +83,10 @@ Global
 		{FB4A74CC-4BA3-44F4-B7BA-CA779E6DE3C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FB4A74CC-4BA3-44F4-B7BA-CA779E6DE3C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FB4A74CC-4BA3-44F4-B7BA-CA779E6DE3C7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B398AD6F-E4D4-44D4-AC9F-C895253EEAFF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B398AD6F-E4D4-44D4-AC9F-C895253EEAFF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B398AD6F-E4D4-44D4-AC9F-C895253EEAFF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B398AD6F-E4D4-44D4-AC9F-C895253EEAFF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
