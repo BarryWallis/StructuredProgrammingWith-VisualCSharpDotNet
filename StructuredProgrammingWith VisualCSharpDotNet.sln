@@ -29,6 +29,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "My Savings Account", "My Sa
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Testing Inc_Dec Operators", "Testing Inc_Dec Operators\Testing Inc_Dec Operators.csproj", "{B398AD6F-E4D4-44D4-AC9F-C895253EEAFF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Looping and Looping", "Looping and Looping\Looping and Looping.csproj", "{98F1E3FF-61E6-4B74-AA10-F2832048BFC2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -87,6 +89,10 @@ Global
 		{B398AD6F-E4D4-44D4-AC9F-C895253EEAFF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B398AD6F-E4D4-44D4-AC9F-C895253EEAFF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B398AD6F-E4D4-44D4-AC9F-C895253EEAFF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{98F1E3FF-61E6-4B74-AA10-F2832048BFC2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{98F1E3FF-61E6-4B74-AA10-F2832048BFC2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{98F1E3FF-61E6-4B74-AA10-F2832048BFC2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{98F1E3FF-61E6-4B74-AA10-F2832048BFC2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
