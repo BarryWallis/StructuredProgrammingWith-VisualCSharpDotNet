@@ -19,7 +19,8 @@ applyTo: '**/*.cs'
  
 ## Naming Conventions
 
-- Follow PascalCase for component names, method names, and public members.
+- Follow PascalCase for component names, method names, public members, and Windows control names. <!-- Modified by BLW -->
+- Use Windows control names directly in code (e.g., MyButton, UserListView). <!-- Added by BLW -->
 - Use camelCase for private fields and local variables.
 - Prefix private class fields with an underscore. <!-- Added by BLW -->
 - Prefix interface names with "I" (e.g., IUserService).
