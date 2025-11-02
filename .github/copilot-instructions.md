@@ -8,6 +8,7 @@ applyTo: '**/*.cs'
 ## C# Instructions
 - Always use the latest version C#, currently C# 13 features.
 - Write clear and concise comments for each function.
+- Prefer var whenever possible, unless it reduces code clarity.
 
 ## General Instructions
 - Make only high confidence suggestions when reviewing code changes.
