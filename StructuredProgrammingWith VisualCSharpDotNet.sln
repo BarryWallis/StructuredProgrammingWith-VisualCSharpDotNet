@@ -33,6 +33,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Looping and Looping", "Loop
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "“Reading Common Tree Names,”", "“Reading Common Tree Names,”\“Reading Common Tree Names,”.csproj", "{082E8950-0AF6-43A0-A573-1EF380A927BB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rolling Heart", "Rolling Heart\Rolling Heart.csproj", "{250F525C-0188-4227-8987-C6EB639E7965}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -99,6 +101,10 @@ Global
 		{082E8950-0AF6-43A0-A573-1EF380A927BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{082E8950-0AF6-43A0-A573-1EF380A927BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{082E8950-0AF6-43A0-A573-1EF380A927BB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{250F525C-0188-4227-8987-C6EB639E7965}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{250F525C-0188-4227-8987-C6EB639E7965}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{250F525C-0188-4227-8987-C6EB639E7965}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{250F525C-0188-4227-8987-C6EB639E7965}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

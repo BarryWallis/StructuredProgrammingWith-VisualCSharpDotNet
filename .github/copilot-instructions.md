@@ -186,3 +186,9 @@ applyTo: '**/*.xaml, **/*.cs'
 
 - Use Swagger/OpenAPI for API documentation for your backend API services.
 - Ensure XML documentation for models and API methods for enhancing Swagger documentation.
+
+# WinForms
+
+## Form Specific
+
+- Make as many changes directly to the Form so controls can be edited in the Visual Studio form editor.
